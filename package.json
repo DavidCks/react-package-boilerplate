@@ -5,7 +5,7 @@
   "module": "dist/index.esm.js",
   "type": "module",
   "scripts": {
-    "storybook": "storybook dev",
+    "dev": "storybook dev",
     "build": "rollup -c"
   },
   "dependencies": {
