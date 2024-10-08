@@ -1,13 +1,6 @@
 {
-  "include": [
-      "src/**/*.tsx",
-      "src/**/*.ts",
-      "src/**/*.jsx",
-      "src/**/*.js",
-    ],
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "lib": ["ESNext", "DOM"],
+    "lib": ["ESNext"],
     "module": "esnext",
     "target": "esnext",
     "moduleResolution": "bundler",
@@ -16,12 +9,9 @@
     "noEmit": true,
     "composite": true,
     "strict": true,
-    "paths": {
-      "react": [ "./node_modules/@types/react" ]
-    },
     "downlevelIteration": true,
     "skipLibCheck": true,
-    
+    "jsx": "react-jsx",
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "allowJs": true,

@@ -6,22 +6,19 @@
   "type": "module",
   "scripts": {
     "dev": "storybook dev",
-    "build": "rollup -c && bun run resolve-symlinks",
-    "resolve-symlinks": "bun run resolve-symlinks.js ./static"
+    "build": "rollup -c"
   },
   "dependencies": {
-    "ai-character": "../ai-character",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "rollup-plugin-copy": "^3.5.0",
     "bun-types": "latest",
     "eslint": "^8.56.0",
     "prettier": "^3.1.1",
     "jest": "^29.7.0",
-    "@types/react": "^18.3.8",
-    "@types/react-dom": "^18.3.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
     "@types/jest": "29.5.12",
     "ts-jest": "^29.2.5",
     "storybook": "8.0.9",
@@ -33,13 +30,13 @@
     "@babel/preset-react": "^7.24.1",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-terser": "^0.4.4"
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup-plugin-typescript2": "^0.34.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0",
-    "@react-three/fiber": "^8.17.5",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "license": "MIT"
 }
