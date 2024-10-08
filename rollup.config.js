@@ -20,6 +20,9 @@ export default {
     },
   ],
   plugins: [
+    copy({
+      targets: [{ src: "node_modules/ai-character/static/*", dest: "static/" }],
+    }),
     resolve({
       extensions: [".js", ".jsx", ".ts", ".tsx"], // Handle .tsx files
     }),

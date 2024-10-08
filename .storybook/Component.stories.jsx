@@ -1,9 +1,9 @@
-import React from 'react';
-import { CounterComponent } from '../src/index';
- 
+import React from "react";
+import { AICharacterCanvas } from "../src/index";
+
 export default {
-  component: CounterComponent,
-  title: 'Counter'
+  component: AICharacterCanvas,
+  title: "Counter",
 };
- 
-export const Placeholder = () => <CounterComponent />;
+
+export const Placeholder = () => <AICharacterCanvas />;
