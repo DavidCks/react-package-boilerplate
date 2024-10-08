@@ -20,6 +20,7 @@
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "@types/jest": "29.5.12",
+    "ts-jest": "^29.2.5",
     "storybook": "8.0.9",
     "@storybook/react-vite": "8.0.9",
     "rollup": "^4.17.2",
@@ -29,8 +30,7 @@
     "@babel/preset-react": "^7.24.1",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-terser": "^0.4.4",
-    "rollup-plugin-typescript2": "^0.34.0"
+    "@rollup/plugin-terser": "^0.4.4"
   },
   "peerDependencies": {
     "typescript": "^5.0.0",
