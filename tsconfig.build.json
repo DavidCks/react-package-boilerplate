@@ -1,12 +1,5 @@
 {
-  "include": [
-      "src/**/*.tsx",
-      "src/**/*.ts",
-      "src/**/*.jsx",
-      "src/**/*.js",
-    ],
   "compilerOptions": {
-    "jsx": "react-jsx",
     "lib": ["ESNext", "DOM"],
     "module": "esnext",
     "target": "esnext",
@@ -20,6 +13,7 @@
     "strict": true,
     "downlevelIteration": true,
     "skipLibCheck": true,
+    "jsx": "react-jsx",
     "paths": {
       "react": [ "./node_modules/@types/react" ]
     },
@@ -30,5 +24,6 @@
       "bun-types" // add Bun global
     ]
   },
+  "include": ["src"],
   "exclude": ["dist", "node_modules"]
 }
