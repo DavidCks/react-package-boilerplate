@@ -2,10 +2,41 @@ import { SandaiClient } from "sandai-core";
 import { useEffect, useState } from "react";
 import { FunctionTester } from "./components/FunctionTester";
 
+/**
+ * Props for the AI3DCharacterDocs component.
+ *
+ * @property {SandaiClient} client - The SandaiClient instance you retrieve from the [AI3DCharacter] components [onLoad] callback.
+ * ```js
+ *  <AI3DCharacter
+        onLoad={handleLoad}
+        url="https://sandai.org/chat"
+        showControls
+    />
+  ```
+ */
 export type AI3DCharacterDocsProps = {
   client: SandaiClient;
 };
 
+/**
+ * AI3DCharacterDocs is a React component that dynamically renders 
+ * interactive documentation for functions exposed by the provided 
+ * SandaiClient instance.
+ * 
+ * This component fetches function documentation from the client and 
+ * displays each function along with a testing interface.
+ * 
+ * @param {AI3DCharacterDocsProps} props - Component props containing the SandaiClient instance.
+ * @param {SandaiClient} props.client - The [SandaiClient] you get from the [AI3DCharacter] components [onLoad] callback.
+ * ```js
+ *  <AI3DCharacter
+        onLoad={handleLoad}
+        url="https://sandai.org/chat"
+        showControls
+    />
+  ```
+ * @returns {JSX.Element} A styled documentation interface displaying functions and their descriptions.
+ */
 export const AI3DCharacterDocs = (props: AI3DCharacterDocsProps) => {
   const [docs, setDocs] = useState<ReturnType<typeof props.client._getDocs>>(
     props.client._getDocs()
